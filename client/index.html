@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency exchange</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="send">
+            <form name="form">
+                <input type="text" name="amount" placeholder="Введіть суму гривень">
+                <input type="button" value="Надіслати" name="submit" disabled>
+            </form>
+        </section>
+        <section class="res hide">
+            <table>
+                <thead>
+                <tr>
+                    <th>Гривні</th>
+                    <th>Валюта</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            </table>
+        </section>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
