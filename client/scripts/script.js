@@ -41,6 +41,8 @@ async function request() {
     try {
         let amount = f1.elements.amount.value;
         f1.elements.amount.value = '';
+        f1.elements.amount.classList.remove('correct');
+        f1.elements.submit.setAttribute('disabled', 'disabled');
         const response = await fetch(`${URL}${amount}`);
         let data = await response.json();
         createTableExchange(data);
